@@ -1,26 +1,32 @@
 pipeline {
     agent any
 
+    tools {
+        maven "Maven"  // Ensure Maven is configured in Jenkins
+    }
+
     stages {
-        stage('Build') {
+        stage('Checkout') {
             steps {
-                echo 'Hello from build stage'
-                echo 'Hello from build stage 2'
+                // Checkout the code from GitHub repository
+                git 'https://github.com/Spiderman-boo/Project-S.git'
             }
         }
-        stage('Deploy') {
+
+        stage('Run TestNG Suite') {
             steps {
-                echo 'Hello from deploy stage'
+                // Run Maven to execute the TestNG suite
+                bat "mvn -Dmaven.test.failure.ignore=true clean test -DsuiteXmlFile=TestSuite/testng.xml"
             }
-        }
-        stage('Test') {
-            steps {
-                echo 'Hello from test stage'
-            }
-        }
-        stage('Release') {
-            steps {
-                echo 'Hello from release stage'
+
+            post {
+                success {
+                    junit '**/target/surefire-reports/TEST-*.xml'  // Record test results
+                    archiveArtifacts 'target/*.jar'  // Archive the jar files
+                }
+                failure {
+                    echo 'Tests failed'
+                }
             }
         }
     }
