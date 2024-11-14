@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-11-14T09:44:08 IST" name="Suite" finished-at="2024-11-14T09:45:00 IST" duration-ms="51841">
+    <groups>
+      <group name="errorhandling">
+        <method signature="ErrorValidation.LoginError()[pri:0, instance:Test.ErrorValidation@302c971f]" name="LoginError" class="Test.ErrorValidation"/>
+      </group> <!-- errorhandling -->
+    </groups>
+    <test started-at="2024-11-14T09:44:08 IST" name="Error validation" finished-at="2024-11-14T09:44:38 IST" duration-ms="30268">
+      <class name="Test.ErrorValidation">
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:Test.ErrorValidation@302c971f]" started-at="2024-11-14T09:44:08 IST" name="launchApplication" finished-at="2024-11-14T09:44:16 IST" duration-ms="7729" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method signature="LoginError()[pri:0, instance:Test.ErrorValidation@302c971f]" started-at="2024-11-14T09:44:16 IST" name="LoginError" finished-at="2024-11-14T09:44:17 IST" duration-ms="1227" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LoginError -->
+        <test-method is-config="true" signature="close()[pri:0, instance:Test.ErrorValidation@302c971f]" started-at="2024-11-14T09:44:17 IST" name="close" finished-at="2024-11-14T09:44:17 IST" duration-ms="190" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- close -->
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:Test.ErrorValidation@302c971f]" started-at="2024-11-14T09:44:17 IST" name="launchApplication" finished-at="2024-11-14T09:44:23 IST" duration-ms="5506" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method signature="ProductError()[pri:0, instance:Test.ErrorValidation@302c971f]" started-at="2024-11-14T09:44:23 IST" name="ProductError" finished-at="2024-11-14T09:44:38 IST" duration-ms="15335" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ProductError -->
+        <test-method is-config="true" signature="close()[pri:0, instance:Test.ErrorValidation@302c971f]" started-at="2024-11-14T09:44:38 IST" name="close" finished-at="2024-11-14T09:44:38 IST" duration-ms="207" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- close -->
+      </class> <!-- Test.ErrorValidation -->
+    </test> <!-- Error validation -->
+    <test started-at="2024-11-14T09:44:39 IST" name="Framework testcase" finished-at="2024-11-14T09:45:00 IST" duration-ms="20734">
+      <class name="Test.FrameW">
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:Test.FrameW@7eecb5b8]" started-at="2024-11-14T09:44:39 IST" name="launchApplication" finished-at="2024-11-14T09:44:44 IST" duration-ms="5443" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method signature="FrameW()[pri:0, instance:Test.FrameW@7eecb5b8]" started-at="2024-11-14T09:44:44 IST" name="FrameW" finished-at="2024-11-14T09:44:59 IST" duration-ms="15106" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- FrameW -->
+        <test-method is-config="true" signature="close()[pri:0, instance:Test.FrameW@7eecb5b8]" started-at="2024-11-14T09:44:59 IST" name="close" finished-at="2024-11-14T09:45:00 IST" duration-ms="179" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- close -->
+      </class> <!-- Test.FrameW -->
+    </test> <!-- Framework testcase -->
+    <test started-at="2024-11-14T09:45:00 IST" name="StandAlone testcase" finished-at="2024-11-14T09:45:00 IST" duration-ms="1">
+    </test> <!-- StandAlone testcase -->
+  </suite> <!-- Suite -->
+</testng-results>
